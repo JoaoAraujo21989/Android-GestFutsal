@@ -1,0 +1,4 @@
+INSERT INTO utilizador 	(email, pass) VALUES 
+				('joao@mail.com', '1234'), 
+				('joaquim@mail.com', '1234'), 
+				('ana@mail.com', '1234');

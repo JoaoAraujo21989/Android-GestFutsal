@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".views.CreateEditAtheleteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_cea_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_group_blue_top"
+            android:gravity="center"
+            android:padding="15dp"
+            android:text="@string/add_athlete"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <ImageView
+                android:id="@+id/bt_cea_exit_athelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="1"
+                android:height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_circle_left" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_cea_register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:height="40dp"
+                android:background="@drawable/bg_button_green"
+                android:text="@string/register" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_cea_update_athelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:height="40dp"
+                android:background="@drawable/bg_button_amber_100"
+                android:text="@string/save1"
+                android:visibility="gone" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_cea_delete_athelete"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_weight="4"
+                android:height="40dp"
+                android:background="@drawable/bg_button_red_300"
+                android:text="@string/delete1"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/bg_group"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="@string/name"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_cea_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:hint="@string/what_is_the_athlete_s_name"
+                    android:inputType="text"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="7sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10sp"
+                        android:gravity="start"
+                        android:text="@string/number"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/et_cea_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="10dp"
+                        android:gravity="start"
+                        android:hint="Ex: 5"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:padding="15dp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="7sp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_group"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginHorizontal="20dp"
+                        android:layout_marginTop="10sp"
+                        android:gravity="start"
+                        android:text="@string/genre"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rb_cea_Masculino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginStart="10sp"
+                            android:text="Masculino"
+                            android:textSize="12sp" />
+
+                        <RadioButton
+                            android:id="@+id/rb_cea_Feminino"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="5dp"
+                            android:layout_marginStart="10sp"
+                            android:text="Feminino"
+                            android:textSize="12sp" />
+                    </RadioGroup>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/bg_group"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="@string/team"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/sp_cea_levelTeam"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:inputType="number"
+                    android:padding="15dp"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/bg_group"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="@string/contact_email"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_cea_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:hint="@string/what_is_the_email_contact"
+                    android:inputType="textEmailAddress"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/bg_group"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="@string/contact_phone"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_cea_tel"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:hint="@string/what_is_the_phone_contact"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginVertical="7dp"
+                android:background="@drawable/bg_group"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="10sp"
+                    android:gravity="start"
+                    android:text="@string/address"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/et_cea_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:gravity="start"
+                    android:hint="@string/what_is_the_address"
+                    android:inputType="text"
+                    android:padding="15dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

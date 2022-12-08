@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".views.DetailsTeamActivity"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dt_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/team_details"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:background="@drawable/bg_group_blue_top"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/bt_dt_exit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_circle_left"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_dt_edit"
+                android:layout_width="0dp"
+                android:layout_weight="4"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:background="@drawable/bg_button_amber_100"
+                android:text="@string/edit" />
+
+            <ImageView
+                android:id="@+id/bt_dt_orderByAsc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_circle_down"/>
+
+            <ImageView
+                android:id="@+id/bt_dt_orderByDesc"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:height="40dp"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/arrow_circle_up"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/bg_group_blue"
+            android:gravity="start"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_row_athelete"
+                android:layout_width="0dp"
+                android:layout_weight="10"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:text="@string/name"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tv_row_atheleteNun"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:gravity="start"
+                android:textColor="@color/black"
+                android:text="Nº"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="start">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rv_dt_atheletes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    </LinearLayout>
+

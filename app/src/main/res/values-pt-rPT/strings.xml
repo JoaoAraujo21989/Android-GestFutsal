@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GestFutsal</string>
+    <string name="title_activity_maps">MapsActivity</string>
+    <string name="email"></string>
+    <string name="pass"></string>
+    <string name="athlete">Atleta</string>
+    <string name="n">N</string>
+    <string name="login">Login</string>
+    <string name="what_s_your_password">Qual a sua password?</string>
+    <string name="password">Password:</string>
+    <string name="what_is_your_email">Qual o seu email?</string>
+    <string name="team_level_sub">Nível da equipa: (Sub)</string>
+    <string name="what_is_the_team_name">Qual o nome da equipa?</string>
+    <string name="team_name">Nome equipa:</string>
+    <string name="delete">Apagar</string>
+    <string name="save">Salvar</string>
+    <string name="register">Registar</string>
+    <string name="add_team">Adicionar equipa</string>
+    <string name="what_is_the_address">Qual a morada?</string>
+    <string name="address">Morada:</string>
+    <string name="what_is_the_phone_contact">Qual o contato de telefone?</string>
+    <string name="contact_phone">Contact (Phone):</string>
+    <string name="what_is_the_email_contact">Qual o cotato de email?</string>
+    <string name="contact_email">Contato (Email):</string>
+    <string name="team">Equipa:</string>
+    <string name="genre">Género:</string>
+    <string name="number">Número:</string>
+    <string name="what_is_the_athlete_s_name">Qual o nome do atleta?</string>
+    <string name="name">Nome:</string>
+    <string name="delete1">Apagar</string>
+    <string name="save1">Salvar</string>
+    <string name="add_athlete">Adicionar ateleta</string>
+    <string name="athlete_details">Detalhes do atleta</string>
+    <string name="edit">Editar</string>
+    <string name="team_details">Detalhes da equipa</string>
+    <string name="teams">Equipas</string>
+    <string name="create_team">Criar Equipa</string>
+    <string name="athletes">Ateletas</string>
+    <string name="create_athlete">Criar atleta</string>
+
+</resources>
